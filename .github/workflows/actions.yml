@@ -52,9 +52,9 @@ jobs:
     - name: multiple command
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.AWS_IP }}
-        username: ${{ secrets.AWS_USUARIO }}
-        key: ${{ secrets.AWS_CLAVE }}
+        host: ${{ secrets.AMZ_IP }}
+        username: ${{ secrets.AMZ_USUARIO }}
+        key: ${{ secrets.AMZ_CLAVE }}
         port: 22  # ${{ secrets.PORT }}
         script: |
             sleep 60
